@@ -14,6 +14,9 @@ html{
 body{
   background-color:#ecf2f2c4;
 }
+.carousel-inner{
+  overflow: unset !important;
+}
 .scroll-up-btn{
   position: fixed;
   height: 43px;
@@ -61,7 +64,7 @@ body{
   margin: auto;
 }
 .navbarr .menu li a {
-
+  display: block;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -339,17 +342,20 @@ p.text-skill {
 }
   span.carousel-control-prev-icon,span.carousel-control-next-icon {
     background: #e43131;
-    padding: 3px 36px 43px 18px;
+    padding: 3px 27px 30px 13px;
     line-height: 26px;
-    margin-top: -80px;
+    margin-top: 500px;
     position: relative;
     color: white;
-    margin-left: -152px;
-    margin-right: -163px;
-    font-size: 39px;
+    font-size: 26px;
     top: 0px;
     border-radius: 5px;
-
+}
+span.carousel-control-prev-icon{
+  margin-left: 500%;
+}
+span.carousel-control-next-icon{
+  margin-right: 500%;
 }
 
 
@@ -416,10 +422,9 @@ p.text-skill {
 section
 .box-30{
   width: 100%;
-
   height: 400px;
   background-color: #222;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: inset 0px 0px 6px 0 grey;
   box-sizing: border-box;
 
@@ -430,7 +435,8 @@ overflow: hidden;
   height: 300px;
   object-fit: cover;
   transition: all 0.3s;
-  padding: 20px;  
+  padding: 7px;  
+  border-radius: 15px;
   cursor: pointer;
   box-shadow: inset 0px 0px 2px 0 grey;
 
@@ -472,9 +478,7 @@ transform: scale(1.05);
   margin-bottom: 10px;
 
 }
-.contact .contact-content .left p{
-  text-align: justify;
-}
+
 .contact .contact-content .row{
   display: flex;
   height: 65px;
@@ -670,18 +674,33 @@ li.footer-li span {
     width: 100%;
     margin-bottom: 35px;
   }
+
 }
 
 @media (max-width: 690px) {
   *{
 
   }
+  
+  span.carousel-control-prev-icon, span.carousel-control-next-icon {
+    background: #e43131;
+    padding: 3px 27px 30px 13px;
+    line-height: 26px;
+    margin-top: 300px;
+    position: relative;
+    color: white;
+    font-size: 26px;
+    top: 0px;
+    border-radius: 5px;
+}
   .descript{
     visibility: hidden;
   }
   .box-30 img {
-    padding: 0;
-    height: 150px !important;
+    padding: 4px;
+    height: 132px !important;
+    box-shadow: inset 0px 0px 0px 2px #00000059;
+    border-radius: 9px;
 }
 .text{
   margin-top: 5px;
