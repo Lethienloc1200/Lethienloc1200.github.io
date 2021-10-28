@@ -6,16 +6,15 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #ecf2f2c4;
+}
 
-}
-html{
-  scroll-behavior: smooth ;
-}
-body{
-  background-color:#ecf2f2c4; 
-}
-
-.scroll-up-btn{
+.scroll-up-btn {
   position: fixed;
   height: 43px;
   width: 40px;
@@ -28,12 +27,29 @@ body{
   z-index: 9999999;
   font-size: 30px;
   border-radius: 6px;
-  cursor:pointer ;
+  cursor: pointer;
   opacity: 0;
   transition: all 0.3s ease;
   pointer-events: none;
 }
-.scroll-up-btn.show{
+.scroll-down-cv {
+  position: fixed;
+  height: 37px;
+  width: 114px;
+  /* background-color: crimson; */
+  left: 30px;
+  border: 1px solid black;
+  bottom: 10px;
+  text-align: center;
+  /* color: #fff; */
+  line-height: 37px;
+  z-index: 9999999;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn.show {
   opacity: 1;
   pointer-events: auto;
   bottom: 30px;
@@ -49,7 +65,6 @@ body{
 .navbarr.sticky {
   padding: 15px 0;
   background-color: crimson;
-
 }
 .navbarr .max-width {
   display: flex;
@@ -69,7 +84,6 @@ body{
   margin-left: 45px;
   transition: color;
   text-decoration: none;
-
 }
 .navbarr .menu li a:hover {
   color: crimson;
@@ -93,7 +107,6 @@ body{
   color: crimson;
 }
 .navbarr.sticky .logo a span {
- 
   color: #fff;
 }
 
@@ -137,7 +150,6 @@ body{
   font-weight: 500;
 }
 .home .home-content .hire-me {
-  
   background-color: crimson;
   color: #fff;
   font-size: 25px;
@@ -197,7 +209,8 @@ section .title::after {
 }
 .about,
 .servises,
-.skills,.teams {
+.skills,
+.teams {
   font-family: "Poppins", sans-serif;
 }
 
@@ -208,20 +221,19 @@ p.loveyou {
   font-style: italic;
   font-weight: 600;
   color: #4b4343;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   margin-left: 292px;
 }
 section {
   padding: 100px 0;
 }
 
-
 .about .title::after {
   content: "who i am";
 }
 
 .about .about-content .left {
-  width: 45%; 
+  width: 45%;
 }
 .about .about-content .left img {
   height: 400px;
@@ -229,7 +241,6 @@ section {
   object-fit: cover;
   border-radius: 6px;
   transition: 0.3s;
-
 }
 .about .about-content .left img:hover {
   box-shadow: 1px 0px 2px 2px grey;
@@ -271,18 +282,18 @@ section {
 }
 
 /* ==============services start styling ==================*/
-.services,.teams {
+.services,
+.teams {
   color: #fff;
   background-color: #111;
-
 }
 .services .title::after {
   content: "what i provide";
   background-color: #111;
 }
-.services .title::before,.teams .title::before {
+.services .title::before,
+.teams .title::before {
   background: #fff;
-
 }
 .services .serv-content .card {
   background-color: #222;
@@ -338,24 +349,24 @@ p.text-skill {
   color: #dc143c;
   white-space: none;
 }
-  span.carousel-control-prev-icon,span.carousel-control-next-icon {
-    background: #e43131;
-    padding: 3px 27px 30px 13px;
-    line-height: 26px;
-    margin-top: 500px;
-    position: relative;
-    color: white;
-    font-size: 26px;
-    top: 0px;
-    border-radius: 5px;
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+  background: #e43131;
+  padding: 3px 27px 30px 13px;
+  line-height: 26px;
+  margin-top: 500px;
+  position: relative;
+  color: white;
+  font-size: 26px;
+  top: 0px;
+  border-radius: 5px;
 }
-span.carousel-control-prev-icon{
+span.carousel-control-prev-icon {
   margin-left: 500%;
 }
-span.carousel-control-next-icon{
+span.carousel-control-next-icon {
   margin-right: 500%;
 }
-
 
 .skills .skills-content .column {
   width: calc(50% - 30px);
@@ -410,15 +421,12 @@ span.carousel-control-next-icon{
 
 /* /*=============== END skills section styling============/ */
 
-
-
 /* =====================START my product=========== */
 
-.teams .title::after{
-    content: "product of me";
+.teams .title::after {
+  content: "product of me";
 }
-section
-.box-30{
+section .box-30 {
   width: 100%;
   height: 400px;
   background-color: #222;
@@ -426,131 +434,125 @@ section
   box-shadow: inset 0px 0px 6px 0 grey;
   box-sizing: border-box;
 
-overflow: hidden;
+  overflow: hidden;
 }
-.box-30 img{
+.box-30 img {
   width: 100%;
   height: 300px;
   object-fit: cover;
   transition: all 0.3s;
-  padding: 7px;  
+  padding: 7px;
   border-radius: 15px;
   cursor: pointer;
   box-shadow: inset 0px 0px 2px 0 grey;
-
-  
 }
-.box-30 img:hover{
-background-color: rgba(22, 21, 21, 0.496);
-transform: scale(1.05);
-
-  
+.box-30 img:hover {
+  background-color: rgba(22, 21, 21, 0.496);
+  transform: scale(1.05);
 }
-.text-box{
-  padding:0  20px;
+.text-box {
+  padding: 0 20px;
 }
-.text-box .text{
- color: crimson;
- font-size: 22px;
- font-weight: 6 00;
- text-align: center;
- cursor: pointer;
+.text-box .text {
+  color: crimson;
+  font-size: 22px;
+  font-weight: 6 00;
+  text-align: center;
+  cursor: pointer;
 }
 .descript {
   text-align: center;
   color: #999;
 }
-
+.a-color-brown {
+  color: #444;
+}
 
 /* ===============END my product================ */
 /* =================START contact me=================== */
-.contact .title::after{
+.contact .title::after {
   content: "get in touch";
 }
-.contact .contact-content .column{
+.contact .contact-content .column {
   width: calc(50% - 30px);
 }
 .contact .contact-content .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-
 }
 
-.contact .contact-content .row{
+.contact .contact-content .row {
   display: flex;
   height: 65px;
   align-items: center;
 }
-.contact .contact-content .row .info{
-  margin-left:30px;
+.contact .contact-content .row .info {
+  margin-left: 30px;
 }
-.contact .contact-content .row i{
+.contact .contact-content .row i {
   font-size: 25px;
-  color: crimson  ;
+  color: crimson;
 }
-.contact .contact-content .row .head{
+.contact .contact-content .row .head {
   font-weight: 500;
 }
-.contact .contact-content .row .sub-title{
+.contact .contact-content .row .sub-title {
   color: #333;
 }
-.contact .right form .fields{
+.contact .right form .fields {
   display: flex;
+}
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .right form .email {
+  margin-left: 10px;
+}
+.contact .right form .textarea {
+  height: 30px;
+  width: 100%;
+}
+.contact .right form .textarea textarea {
+  padding-top: 10px;
 
-}
-.contact .right form .name{
-  margin-right:10px;
-}
-.contact .right form .email{
-  margin-left:10px;
-}
-.contact .right form .textarea{
- height: 30px;
- width: 100%;
-}
-.contact .right form .textarea textarea{
-padding-top: 10px;
-
-width: 100%;
-border: none;
-outline: none;
-height: 80px;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 80px;
 }
 .contact .right form .field,
-.contact .right form .fields .filed{
-  height:45px;
-  width: 100%; 
-   margin-bottom: 15px;
-}
-.contact .right form .field input,.contact .right form .textarea{
-  height : 100%;
+.contact .right form .fields .filed {
+  height: 45px;
   width: 100%;
-  border:1px solid lightgray;
+  margin-bottom: 15px;
+}
+.contact .right form .field input,
+.contact .right form .textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgray;
   border-radius: 6px;
   outline: none;
   padding: 0 15px;
   background: #fff;
   font-size: 17px;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.button-area button{
-  width :180px;
-  padding:4px 17px;
+.button-area button {
+  width: 180px;
+  padding: 4px 17px;
   background-color: crimson;
-border-radius: 6px; 
-  color:#fff;
+  border-radius: 6px;
+  color: #fff;
   font-weight: 600;
-  border:2px solid crimson;
+  border: 2px solid crimson;
   transition: all 0.3s;
-
 }
-.button-area button:hover{
+.button-area button:hover {
   background: none;
   color: crimson;
-
 }
-
 
 /*======================== footer ======================== */
 
@@ -568,31 +570,28 @@ h2.about-me {
   padding: 35px 0px 20px 0px;
   color: #999999;
   font-weight: 400;
-  font-family: 'Poppins' serif;
+  font-family: "Poppins" serif;
 }
 footer .about-me {
   padding: 20px 0;
   font-size: 30px;
   font-weight: 700;
   color: gray;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 li.footer-li {
   padding: 10px;
   list-style: none;
 }
 li.footer-li i {
- padding-right: 10px;
-color:crimson;
-  
+  padding-right: 10px;
+  color: crimson;
 }
 li.footer-li span {
-
-  font-family: 'Poppins' sans-serif;
+  font-family: "Poppins" sans-serif;
   color: #999999;
   font-weight: 600;
-   
- }
+}
 
 /* =================END contact me=================== */
 
@@ -611,6 +610,9 @@ li.footer-li span {
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
+  }
+  .scroll-down-cv {
+    opacity: 0;
   }
   .menu-btn {
     display: block;
@@ -668,19 +670,20 @@ li.footer-li span {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
-  .contact .contact-content .column{
+  .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
   }
-
 }
 
 @media (max-width: 690px) {
-  *{
-
+  * {
   }
-  
-  span.carousel-control-prev-icon, span.carousel-control-next-icon {
+  p.loveyou {
+    margin-left: 118px;
+  }
+  span.carousel-control-prev-icon,
+  span.carousel-control-next-icon {
     background: #e43131;
     padding: 3px 27px 30px 13px;
     line-height: 26px;
@@ -690,8 +693,8 @@ li.footer-li span {
     font-size: 26px;
     top: 0px;
     border-radius: 5px;
-}
-  .descript{
+  }
+  .descript {
     visibility: hidden;
   }
   .box-30 img {
@@ -699,24 +702,24 @@ li.footer-li span {
     height: 132px !important;
     box-shadow: inset 0px 0px 0px 2px #00000059;
     border-radius: 9px;
-}
-.text{
-  margin-top: 5px;
-  font-size: 18px !important;
-}
-section .box-30 {
-  height: 190px;
-}
+  }
+  .text {
+    margin-top: 5px;
+    font-size: 18px !important;
+  }
+  section .box-30 {
+    height: 190px;
+  }
 
-.col-4 {
-   padding: 4px;
-}
+  .col-4 {
+    padding: 4px;
+  }
   .max-width.teams-litle {
     padding: 0;
-}
-.row{
-  margin: 0;
-}
+  }
+  .row {
+    margin: 0;
+  }
   .max-width {
     margin-top: -20px;
     padding: 0 29px;
