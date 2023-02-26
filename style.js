@@ -19,15 +19,15 @@ $(document).ready(function(){
         
     });
     var typed = new Typed('.typing',{
-        strings:["Developer...",'good boy...'],
-        typeSpeed:130,
-        backSpeed:100,
+        strings:["Coder...",'good boy...'],
+        typeSpeed:120,
+        backSpeed:180,
         loop:true
     });
     var typed = new Typed('.typing2',{
-        strings:["Developer...",'Designer...'],
-        typeSpeed:130,
-        backSpeed:100,
+        strings:['Developer...',"Coderrrrr "],
+        typeSpeed:200,
+        backSpeed:200,
         loop:true
     })
 
