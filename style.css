@@ -680,6 +680,11 @@ li.footer-li span {
 @media (max-width: 690px) {
   * {
   }
+  li.footer-li {
+    font-size: 10px;
+}
+
+
   p.loveyou {
     margin-left: 118px;
   }
